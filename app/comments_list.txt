@@ -1,0 +1,3 @@
+[{"id":1,"username":"qwe","comment":"Long comment","date":"00-00-00","avatar":"qwe.jpg"},
+{"id":2,"username":"qwe","comment":"Long comment","date":"01-01-01","avatar":"qwe.jpg"},
+{"id":3,"username":"asd","comment":"Long comment","date":"02-02-02","avatar":"asd.jpg"}

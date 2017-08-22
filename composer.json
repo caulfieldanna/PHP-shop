@@ -1,0 +1,29 @@
+{
+    "name": "course/shop",
+    "description": "shop",
+    "type": "project",
+    "authors": [
+        {
+            "name": "course",
+            "email": "frgyvu@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "Course\\Shop\\": "app/"
+        }
+    },
+
+    "repositories": [
+        {
+            "type":"git",
+            "url":"https://github.com/ForCourses/frame"
+
+        }
+    ],
+
+    "require": {
+        "sky/frame": "dev-master"
+    }
+}

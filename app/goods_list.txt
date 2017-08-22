@@ -1,0 +1,6 @@
+[{"id":1,"title":"Пианино","description":"Long description 1","preview":"piano.jpg","price":210,"count":12},
+{"id":2,"title":"Гитара","description":"Long description 2","preview":"guitar.jpg","price":100,"count":67},
+{"id":3,"title":"Скрипка","description":"Long description 3","preview":"violin.jpg","price":300,"count":2},
+{"id":4,"title":"Барабан","description":"Long description 4","preview":"drum.jpg","price":700,"count":10},
+{"id":5,"title":"Труба","description":"Long description 5","preview":"trumpet.jpg","price":240,"count":24},
+{"id":6,"title":"Саксофон","description":"Long description 6","preview":"saks.jpg","price":170,"count":7}

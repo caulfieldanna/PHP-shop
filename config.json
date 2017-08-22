@@ -1,0 +1,41 @@
+{
+	"db":{
+		"server": "localhost",
+        "db_name": "phpshop",
+        "username": "root",
+        "pass": "holden"
+	},
+	"urls":{
+		"show all_goods":{
+		  "path": "/",
+		  "controller": "\\Course\\Shop\\Controllers\\GoodsController::indexAction"
+		},
+		"good_description":{
+		  "path": "/description/{id}",
+    	  "controller": "\\Course\\Shop\\Controllers\\GoodsController::descriptionAction"
+		},
+		"add_good":{
+		  "path": "/good/add",
+      	  "controller": "\\Course\\Shop\\Controllers\\GoodsController::addGoodAction"
+		},
+		"user_registration":{
+		  "path": "/account/registration",
+    	  "controller": "\\Course\\Shop\\Controllers\\AccountController::registrationAction"
+		},
+		"user_login":{
+		  "path": "/account/login",
+    	  "controller": "\\Course\\Shop\\Controllers\\AccountController::loginAction"
+		},
+		"account":{
+		  "path": "/account",
+    	  "controller": "\\Course\\Shop\\Controllers\\AccountController::accountAction"
+		},
+		"logout_account":{
+		  "path": "/account/logout",
+    	  "controller": "\\Course\\Shop\\Controllers\\AccountController::logoutAction"
+		}
+	},
+	"dirs":{
+		"templates":"../app/views/"
+	}
+}

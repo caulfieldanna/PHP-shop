@@ -1,0 +1,84 @@
+{% extends "base.twig" %}
+
+
+{% block content %}
+
+<div class="goods-row">
+    <div class="wrapper">
+        <div class="container-fluid padding-less first-row">
+            <div class="col-md-6 col-sm-4">
+                <div class="thumbnail">
+                    <img src="/public/static/img/{{ current_good.preview }}">
+                    <h1>{{ current_good.title }}</h1>
+                    <p>{{ current_good.description }}</p>
+                    <p class="text-right">
+                        Цена: {{ current_good.price }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="comments">
+                        <h3 class="title-comments">Комментарии ({{ comments_length }})</h3>
+
+                        <ul class="media-list">
+                            {% for key in comments %}
+                            <li class="media">
+                                <div class="media-left">
+                                        <img class="avatar media-object img-circle" src="/public/static/img/<?php echo $comments[$key]['avatar']; ?>
+                                        {{ key.avatar }}
+                                        " alt="<?php echo $comments[$key]['username']; ?>
+                                        {{ key.username }}">
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        <div class="author">{{ key.username }}</div>
+                                        <div class="metadata">
+                                            <span class="date">{{ key.date }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="media-text text-justify">
+                                        {{ key.comment }}
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+
+                    <?php if ($auth): ?>
+                    {{ auth }}
+                        <form id="comment_form" class="row" role="form">
+                            <div class="form-group">
+                                <textarea id="comment" rows="3" class="form-control comment-form" placeholder="Ваш комментарий"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">Отправить</button>
+                            </div>
+                        </form>
+
+                    {% else %}
+
+                        <p>Вы не можете оставлять комментарии</p>
+                    {% endif %}
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

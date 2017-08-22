@@ -1,0 +1,3 @@
+[{"id":1,"login":"qwe","hash":"$2y$10$0pGcZrKHenFqHDoGJ0o0XeNE9uzluJwal5uyVZkACLJoQ8jRRcCwu","preview":"qwe.jpg","email":"qwe@mail.ru","role":"user"},
+{"id":2,"login":"asd","hash":"$2y$10$0pGcZrKHenFqHDoGJ0o0XeNE9uzluJwal5uyVZkACLJoQ8jRRcCwu","preview":"asd.jpg","email":"asd@mail.ru","role":"user"},
+{"id":3,"login":"admin","hash":"$2y$10$s.qAoVajXaoVhJVJ0O2glOV84OjzjT7lH8PO/1Z/JiRWdxNIzHT/m","preview":"admin.jpg","email":"admin@mail.ru","role":"admin"}
